@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Table UI</title>
+  <link rel="stylesheet" href="tableui.css">
+</head>
+<body>
+  <div class="container">
+    <h2>User Table</h2>
+    <input type="text" id="searchInput" placeholder="Search by name...">
+
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th data-column="id">ID</th>
+          <th data-column="name">Name</th>
+          <th data-column="email">Email</th>
+          <th data-column="role">Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JS will populate this -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

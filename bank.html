@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyBank</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="bankstyle.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🏦 MyBank Dashboard</h1>
+    <div class="balance">
+      <h2>Balance: ₹<span id="balance">0</span></h2>
+    </div>
+
+    <div class="actions">
+      <input type="number" id="amount" placeholder="Enter amount" />
+      <button onclick="deposit()">Deposit</button>
+      <button onclick="withdraw()">Withdraw</button>
+    </div>
+
+    <div class="history">
+      <h3>Transaction History</h3>
+      <ul id="transactionList"></ul>
+    </div>
+  </div>
+
+  <script src="banking.js"></script>
+</body>
+</html>

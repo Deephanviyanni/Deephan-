@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Photography Work</title>
+  <link rel="stylesheet" href="photogallery.css"/>
+</head>
+<body>
+  <header>
+    <h1>My Work</h1>
+    <nav>
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="portraits">Portraits</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="urban">Urban</button>
+    </nav>
+  </header>
+
+  <main class="gallery">
+    <div class="photo" data-category="portraits"><img src="img1.jpg" alt="Portrait 1"></div>
+    <div class="photo" data-category="nature"><img src="img2.jpg" alt="Nature 1"></div>
+    <div class="photo" data-category="urban"><img src="img3.jpg" alt="Urban 1"></div>
+    <div class="photo" data-category="portraits"><img src="img4.jpg" alt="Portrait 2"></div>
+    <div class="photo" data-category="nature"><img src="img5.jpg" alt="Nature 2"></div>
+    <div class="photo" data-category="urban"><img src="img6.jpg" alt="Urban 2"></div>
+  </main>
+
+  <!-- Lightbox Preview -->
+  <div id="lightbox">
+    <span id="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Preview">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
